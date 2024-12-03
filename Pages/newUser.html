@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/newUser.css">
+</head>
+<body>
+    <div id="page">
+
+        <header>
+            <div id="headerLeft">
+                <h3>Oba! Será um prazer ter você no nosso time!</h3>
+                <img src="../Icons/volunteer.png">
+            </div>
+            
+            <div id="nav">
+                <nav>
+                    <a href="../index.html">Voltar à página inicial</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <p>Para ser um verdadeiro sangue bom, preencha os dados de cadastro abaixo:</p>
+            <div id="registrationForm">
+                <form action="#" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+                    <br>
+
+                    <label for="lastName">Sobrenome:</label>
+                    <input type="text" id="lastName" required>
+                    <br>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" required>
+                    <br>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required placeholder="Dica: utilize letras, números e caracteres especiais">
+                    <br>
+
+                    <label for="birthday">Data de nascimento:</label>
+                    <input type="date" id="birthday">
+                    <br>
+
+                    <label for="state">Estado/UF:</label>
+                    <select name="state" id="state">
+                        <option value="blank" selected="yes"></option>
+                        <option value="ac">Acre</option>"
+                        <option value="al">Alagoas</option>"
+                        <option value="am">Amazonas</option>"
+                        <option value="ap">Amapá</option>"
+                        <option value="ba">Bahia</option>"
+                        <option value="ce">Ceará</option>"
+                        <option value="df">Distrito Federal</option>"
+                        <option value="es">Espírito Santo</option>"
+                        <option value="go">Goiás</option>"
+                        <option value="ma">Maranhão</option>"
+                        <option value="mt">Mato Grosso</option>"
+                        <option value="ms">Mato Grosso do Sul</option>"
+                        <option value="mg">Minas Gerais</option>"
+                        <option value="pa">Pará</option>"
+                        <option value="pb">Paraíba</option>"
+                        <option value="pr">Paraná</option>"
+                        <option value="pe">Pernambuco</option>"
+                        <option value="pi">Piauí</option>"
+                        <option value="rj">Rio de Janeiro</option>"
+                        <option value="rn">Rio Grande do Norte</option>"
+                        <option value="rs">Rio Grande do Sul</option>"
+                        <option value="ro">Rondônia</option>"
+                        <option value="rr">Roraima</option>"
+                        <option value="sc">Santa Catarina</option>"
+                        <option value="se">Sergipe</option>"
+                        <option value="sp">São Paulo</option>"
+                        <option value="to">Tocantins</option>"
+                    </select>
+                    <br>
+
+                    <label for="bloodType">Tipo sanguíneo:</label>
+                    <select name="bloodType" id="bloodType">
+                        <option value="blank" selected="yes"></option>
+                        <option value="AP">A +</option>
+                        <option value="AN">A -</option>
+                        <option value="OP">O +</option>
+                        <option value="ON">O -</option>
+                        <option value="BP">B +</option>
+                        <option value="BN">B -</option>
+                        <option value="ABP">AB +</option>
+                        <option value="ABN">AB -</option>
+                        <option value="unknown">Não sei :(</option>
+                    </select>
+                </form>        
+            </div>
+
+            <div id="registration">
+                <div id="button">
+                    <button>Me tornar um sangue bom!</button>
+                </div>
+                
+                <div id="image">
+                    <img src="../Images/blooddrop3.jpg">
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

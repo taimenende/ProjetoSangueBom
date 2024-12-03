@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face{
+    font-family: LittleSunshine;
+    src: url(../Fonts/A\ little\ sunshine.ttf);
+}
+@keyframes jump {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-20px);
+      }
+}
+/* START OF THE HEADER */
+header{
+    height: 105px; 
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+}
+header h3{
+    font-size: 25pt;
+    font-family: LittleSunshine, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+#headerLeft{
+    width: 50%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+#nav{
+    width: 50%;
+    text-align: right;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: LittleSunshine, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    color:  rgb(80, 78, 78);  
+}
+nav a:hover{
+    font-weight: bold;
+    text-decoration: underline 1px red;
+}
+/* END OF THE HEADER */
+
+/* START OF THE MAIN CONTENT */
+main p{
+    margin: 10px;
+    font-style: italic;
+}
+#registrationForm{
+    height: 550px;
+    margin: 0px 10px;
+}
+form{
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 30px;
+    border: none;
+    border-bottom: 2px rgb(170, 45, 45) solid;
+}
+#registration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    border-color: rgba(117, 28, 28, 0.5);
+    color: rgba(192, 19, 19, 0.877);
+    box-shadow: 10px 10px 10px 5px rgb(243, 220, 185);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(192, 19, 19, 0.877);
+    color: white;
+}
+#image{
+    animation: jump 1s infinite alternate;
+    -webkit-animation: jump 1s infinite alternate;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+/* END OF THE MAIN CONTENT */

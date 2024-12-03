@@ -1,0 +1,140 @@
+@font-face{
+    font-family: LittleSunshine;
+    src: url(Fonts/A\ little\ sunshine.ttf);
+}
+@keyframes jump {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-40px);
+      }
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* START OF THE HEADER (WITH NAV) */
+header{
+    height: 140px; 
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerLeft{
+    width: 50%;
+    margin-left: 30px;
+    font-family: LittleSunshine, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30pt;
+    gap: 8px;
+}
+#headerLeft h2 a{
+    text-decoration: none;
+    color: black;
+}
+#headerLeft h2 a:hover{
+    color: red;
+}
+#nav{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(80, 78, 78);
+    font-family: LittleSunshine, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23pt;
+}
+nav a:hover{
+    text-decoration: underline 1px red;
+    font-weight: bold;
+}
+/* END OF THE HEADER (WITH NAV) */
+
+/* START OF THE MAIN CONTENT */
+main{
+    height: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#banner{
+    width: 30%;
+    margin: 40px auto;
+    height: 350px;
+    background-image: url(Images/herodrop.png);
+    background-size: cover;
+    background-position: center;
+    animation: jump 1s infinite alternate;
+    -webkit-animation: jump 1s infinite alternate;
+}
+#login{
+    color: white;
+    width: 25%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    background-color: rgb(245, 95, 95);
+    border-radius: 5px;
+}
+form{
+    text-align: center;
+    font-size: 16pt;
+}
+form a{
+    font-size: 11pt;
+    color: white;
+    padding: 3px;
+}
+form p{
+    font-size: 11pt;
+    color: rgb(80, 78, 78);
+}
+.input{
+    padding: 12px;
+    width: 80%;
+    margin: 8px auto;
+    border: 1px solid rgb(236, 236, 219);
+    border-radius: 3px;
+}
+.input:hover{
+    transition: 2s;
+    background-color: rgba(243, 184, 184, 0.986);
+    border: 1px solid white;
+}
+button{
+    width: 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border-color:  rgb(126, 120, 120);
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(192, 19, 19, 0.877);
+    color: white;
+    border: 2px solid white;
+}
+/* END OF THE MAIN CONTENT */
+
+/* START OF THE FOOTER */
+footer{
+    height: 180px;
+    background-color: blanchedalmond;
+    background-image: url(Images/bloodbag2.jpeg);
+    background-size: contain;
+}
+/* END OF THE FOOTER */
+
